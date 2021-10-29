@@ -102,7 +102,7 @@ a{
 }
 
 .wrapper{
-    max-width: 960px;
+    // max-width: 960px;
     width: 80%;
     margin: 0 auto;
 }
@@ -122,7 +122,7 @@ nav p{
     font-size: 35px;
     padding: 10px;
 }
-span{
+nav span{
     color: #f0efed;
 }
 
@@ -151,7 +151,7 @@ ul p{
 
     header{
     background-color: #f6a823;
-    height:100;    
+    height:100%;    
     
     }
     h1{
@@ -231,9 +231,14 @@ ul p{
     margin: 0;
     position: relative;
     
+    
 }
 .image1 img, .image2 img{
     width: 100%;
+}
+.image1{
+    box-shadow: solid 1px #a82706;
+    
 }
 .image1 div{
     position: absolute;
@@ -249,12 +254,12 @@ ul p{
 .image2::after{
     content: "";
     position: absolute;
-    width: 728px;
+    width: 800px;
     height: 370px;
     background-color: #f6a823 ;
     z-index: -1;
     top: 20px;
-    left: 10px ;
+    left: 40px ;
     
 }
 .blogText1,.blogText2{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
@@ -286,6 +287,10 @@ nav .wrapper {
   width: 60%;
 }
 
+.blogger, .comment1, .comment2 {
+  border-bottom: 10px solid #f6a823;
+}
+
 .blogPortrait, .recentPost, .blogger, .comment1, .comment2 {
   background-color: white;
   padding: 30px;
@@ -311,12 +316,22 @@ nav .wrapper {
           flex-direction: column;
   padding: 0;
   margin: 0;
-  list-style-position: outside;
+  list-style: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
 }
 .recentPost li {
-  list-style-type: disc;
   padding: 0;
   margin: 5px 0;
+  float: left;
+}
+.recentPost ul li::before {
+  content: "•";
+  color: #f6a823;
+  margin-right: 20px;
+  font-size: 15px;
 }
 
 .blogPortrait {
@@ -329,7 +344,7 @@ nav .wrapper {
           flex-direction: column;
 }
 
-form, .comments {
+.comments {
   margin-top: 30px;
 }
 
@@ -338,6 +353,9 @@ form, .comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .comment2 {
@@ -345,10 +363,25 @@ form, .comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogForm {
+  margin-top: 30px;
 }
 
 .p1, .p2 {
-  width: 100%;
+  width: 75%;
+}
+
+.comment1 img, .comment2 img {
+  width: 20%;
+}
+
+em {
+  color: #285E64;
 }
 
 * {
@@ -461,6 +494,8 @@ input {
 
     Body Text: Roboto, Regular, 20px. letter spacing 0px line height 32px
 */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 * {
   margin: 0;
   padding: 0;
@@ -536,7 +571,6 @@ a {
 }
 
 .wrapper {
-  /* max-width: 960px; */
   width: 80%;
   margin: 0 auto;
 }
@@ -558,7 +592,7 @@ nav p {
   padding: 10px;
 }
 
-span {
+nav span {
   color: #f0efed;
 }
 
@@ -592,7 +626,7 @@ a {
 
 header {
   background-color: #f6a823;
-  height: 100;
+  height: 100%;
 }
 
 h1 {
@@ -698,6 +732,11 @@ h1 {
   width: 100%;
 }
 
+.image1 {
+  -webkit-box-shadow: solid 1px #a82706;
+          box-shadow: solid 1px #a82706;
+}
+
 .image1 div {
   position: absolute;
   width: 100vw;
@@ -712,12 +751,12 @@ h1 {
 .image2::after {
   content: "";
   position: absolute;
-  width: 728px;
+  width: 800px;
   height: 370px;
   background-color: #f6a823;
   z-index: -1;
   top: 20px;
-  left: 10px;
+  left: 40px;
 }
 
 .blogText1, .blogText2 {
