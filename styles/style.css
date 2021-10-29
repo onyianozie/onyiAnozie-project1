@@ -753,7 +753,7 @@ h1 {
 .image2::after {
   content: "";
   position: absolute;
-  width: 100vw;
+  width: 675px;
   height: 370px;
   background-color: #f6a823;
   z-index: -1;
