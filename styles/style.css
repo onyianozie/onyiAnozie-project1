@@ -472,6 +472,18 @@ input {
   padding: 20px;
 }
 
+h2 {
+  border: 1px solid blue;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 /* Colors */
 /* Black: #2c2c2c | Dark-grey-blue: #285e64 | Orange-yellow: #f6a823 | Grey: #4f4f4f | Accent: #05afc1 |  Rust Red: #a82706 | White-shade: #f0efed */
 /* H1 Heading Text (Blog, Get in Touch) ; Lora Bold, 80px, line height: 92px, letter spacing: 0px
@@ -490,8 +502,6 @@ input {
 
     Body Text: Roboto, Regular, 20px. letter spacing 0px line height 32px
 */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 * {
   margin: 0;
   padding: 0;

@@ -6,27 +6,18 @@ border: 1px solid blue;
 @mixin name {
     
 }
+/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-    body{
-        background-color: #3b59a5;
-    }
-}
-@media (min-width: 500px){
-    body{
-        background-color: green;
+    h1{
+        font-size: 50px;
     }
 }
 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    body{
-        background-color: #00a59a;
-    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    body{
-        background-color: #FFD166;
-    }
 }
