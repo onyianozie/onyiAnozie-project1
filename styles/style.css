@@ -203,15 +203,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -234,6 +225,222 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.blogHeader {
+  position: relative;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  height: 60vh;
+}
+.blogHeader h1 {
+  font-size: 80px;
+  position: absolute;
+  bottom: -100px;
+}
+.blogHeader nav {
+  background-color: #f6a823;
+}
+
+h2 {
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav .wrapper {
+  width: 80%;
+}
+
+.blogContainer {
+  background-color: #f0efed;
+  padding: 80px 0;
+}
+
+.flexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.flexChild1 {
+  width: 30%;
+}
+
+.flexChild2 {
+  width: 60%;
+}
+
+.blogPortrait, .recentPost, .blogger, .comment1, .comment2 {
+  background-color: white;
+  padding: 30px;
+}
+
+.recentPost {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.recentPost ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-position: outside;
+}
+.recentPost li {
+  list-style-type: disc;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.blogPortrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form, .comments {
+  margin-top: 30px;
+}
+
+.comment1 {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment2 {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p1, .p2 {
+  width: 100%;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.contactHeader {
+  position: relative;
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  height: 60vh;
+}
+.contactHeader h1 {
+  font-size: 80px;
+  position: absolute;
+  bottom: -100px;
+}
+
+.contactBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+}
+
+.contactBox2 {
+  width: 60%;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+textarea {
+  resize: none;
+  height: 250px;
+  border: none;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.contactTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contactBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactInfo {
+  background-color: #f0efed;
+}
+
+.fab {
+  color: #f6a823;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.field {
+  width: 80%;
+  height: 50px;
+}
+
+input {
+  border: none;
+  height: 50px;
+  padding: 20px;
 }
 
 /* Colors */
@@ -288,7 +495,7 @@ h2 {
   font-weight: bold;
   font-size: 42px;
   letter-spacing: 1px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -385,7 +592,7 @@ a {
 
 header {
   background-color: #f6a823;
-  height: 700px;
+  height: 100;
 }
 
 h1 {

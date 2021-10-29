@@ -1,1 +1,70 @@
+*{
+    outline: 1px solid red;
+}
 
+
+
+.contactHeader{
+    position: relative;
+    h1{
+        font-size: 80px;
+        position: absolute;
+        bottom: -100px;
+    }
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+
+.contactBox1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    padding: 30px;
+
+}
+.contactBox2{
+    width: 60%;
+  
+}
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+textarea{
+    resize: none;
+    height: 250px;
+    border: none;
+    margin: 20px 0;
+    padding: 20px;
+}
+.contactTop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactBottom{
+    display: flex;
+    flex-direction: column;
+
+}
+.contactInfo{
+    background-color: #f0efed;
+}
+.fab{
+    color: #f6a823;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.field{
+    width: 80%;
+    height: 50px;
+}
+input{
+    border: none;
+    height: 50px;
+    padding: 20px;
+}

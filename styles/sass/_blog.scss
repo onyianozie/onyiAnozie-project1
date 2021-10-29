@@ -1,0 +1,104 @@
+.blogHeader{
+    position: relative;
+    h1{
+        font-size: 80px;
+        position: absolute;
+        bottom: -100px;
+    }
+    nav{
+        background-color: #f6a823;
+    }
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+
+h2{
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+h4{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+
+}
+nav
+
+.wrapper{
+    width: 80%;
+}
+.blogContainer{
+    background-color: #f0efed;
+    padding: 80px 0;
+}
+
+.flexParent{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.flexChild1{
+    width: 30%;
+}
+.flexChild2{
+    width: 60%;
+}
+
+.blogPortrait, .recentPost, .blogger, .comment1, .comment2{
+    background-color: white;
+    padding: 30px;
+}
+
+.recentPost{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style-position: outside;
+        
+    }
+    li{
+        list-style-type: disc;
+        padding: 0;
+        margin: 5px 0;
+        
+    }
+
+
+}
+.blogPortrait{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.comments{
+    margin-top: 30px;
+}
+.comment1{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.comment2{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p1, .p2{
+    width: 80%;
+}
