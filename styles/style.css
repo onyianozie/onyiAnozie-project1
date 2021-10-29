@@ -384,10 +384,6 @@ em {
   color: #285E64;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .contactHeader {
   position: relative;
   background-image: url(../assets/contact-image-1.jpg);
@@ -640,7 +636,7 @@ h1 {
 .headerText img {
   width: 200px;
   position: absolute;
-  top: -90px;
+  top: -80px;
   left: -60px;
 }
 
@@ -751,7 +747,7 @@ h1 {
 .image2::after {
   content: "";
   position: absolute;
-  width: 800px;
+  width: 740px;
   height: 370px;
   background-color: #f6a823;
   z-index: -1;
