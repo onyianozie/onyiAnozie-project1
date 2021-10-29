@@ -472,9 +472,7 @@ input {
   padding: 20px;
 }
 
-h2 {
-  border: 1px solid blue;
-}
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
