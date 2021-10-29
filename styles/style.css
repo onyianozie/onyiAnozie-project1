@@ -472,8 +472,6 @@ input {
   padding: 20px;
 }
 
-
-
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   h1 {
@@ -755,7 +753,7 @@ h1 {
 .image2::after {
   content: "";
   position: absolute;
-  width: 740px;
+  width: 100vw;
   height: 370px;
   background-color: #f6a823;
   z-index: -1;
