@@ -514,17 +514,20 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 p {
   margin: 0;
   padding: 20px 0;
-}
-
-h1 {
-  font-family: "lora" "serif";
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 92px;
-  letter-spacing: 0px;
 }
 
 h2 {
@@ -578,6 +581,10 @@ a {
 }
 
 /* HEADER */
+i.fa-bars {
+  visibility: hidden;
+}
+
 nav {
   font-family: "roboto";
   font-weight: bold;
@@ -642,7 +649,7 @@ h1 {
 .headerText img {
   width: 200px;
   position: absolute;
-  top: -80px;
+  top: -120px;
   left: -60px;
 }
 
@@ -677,7 +684,6 @@ h1 {
 
 .aboutContent {
   width: 80%;
-  /* margin: 30px 0; */
   padding: 100px 0;
 }
 
@@ -748,17 +754,6 @@ h1 {
   top: 10px;
   /* left: -10%; */
   right: -30px;
-}
-
-.image2::after {
-  content: "";
-  position: absolute;
-  width: 675px;
-  height: 370px;
-  background-color: #f6a823;
-  z-index: -1;
-  top: 20px;
-  left: 40px;
 }
 
 .blogText1, .blogText2 {
@@ -893,4 +888,58 @@ footer {
   background-color: #2c2c2c;
   color: #f0efed;
   text-align: center;
+}
+
+@media (max-width: 940px) {
+  .aboutContent p {
+    font-size: 18px;
+  }
+
+  .headerText h1 {
+    font-size: 70px;
+  }
+
+  .headerText img {
+    top: -80px;
+    left: -60px;
+  }
+
+  .journeyImage img {
+    width: 80%;
+  }
+
+  .visionDescription {
+    margin: 20px 0 0 0;
+  }
+
+  .about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  i.fa-bars {
+    visibility: hidden;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  i.fa-bars {
+    visibility: visible;
+    margin: 30px 0;
+    cursor: pointer;
+  }
+
+  .aboutContent h2, .journeyText h2 {
+    font-size: 35px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* HEADER */
+  /* TESIMONIALS */
 }
