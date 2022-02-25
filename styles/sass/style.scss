@@ -31,6 +31,7 @@
 }
 
 body{
+    max-width: 1650px;
     width: 100%;
     font-family: 'roboto' 'sans serif';
     font-size: 20px;
@@ -369,15 +370,19 @@ ul p{
 
 /* GALLERY */
 
-.container{
-    width: 100%;
-}
 .gallery{
+    width: 100%;
+    margin: 20px;
+}
+// .container{
+//     width: 100%;
+// }
+.galleryCard{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.gallery img{
+.galleryCard img{
     width: 50%;
     margin: 10px;
 }
@@ -440,36 +445,15 @@ footer{
     .aboutContent h2, .journeyText h2{
         font-size: 35px;
     }
-    // .contactInfo, .footerNav{
-    //     width: 100%;
-    //     text-align: center;
-
-    // }
-    // .contactInfo{
-    //     padding-bottom: 0;
-    // }
-    // .footerNav ul{
-    //     text-align: center;
-    // }
+   
 }
 
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    
-    /* HEADER */
-    // h1{
-    //     font-size: 1.2rem;
-    // }
-
-    /* TESIMONIALS */
-    // .testimonialsPreview{
-    //     padding: 15px 25px;
-    // }
-    
-    // /* FOOTER */
-    // input[type=email], button{
-    //     width:100%;
-    // }
-
+   
+    .galleryCard{
+        flex-direction: column;
+        margin: 0;
+    }
 }

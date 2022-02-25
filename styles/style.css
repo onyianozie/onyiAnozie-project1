@@ -624,6 +624,7 @@ input {
 }
 
 body {
+  max-width: 1650px;
   width: 100%;
   font-family: "roboto" "sans serif";
   font-size: 20px;
@@ -990,11 +991,12 @@ h1 {
 }
 
 /* GALLERY */
-.container {
+.gallery {
   width: 100%;
+  margin: 20px;
 }
 
-.gallery {
+.galleryCard {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1004,7 +1006,7 @@ h1 {
           justify-content: center;
 }
 
-.gallery img {
+.galleryCard img {
   width: 50%;
   margin: 10px;
 }
@@ -1066,6 +1068,11 @@ footer {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* HEADER */
-  /* TESIMONIALS */
+  .galleryCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
 }
