@@ -9,7 +9,7 @@
     h1{
         font-size: 80px;
         position: absolute;
-        bottom: -100px;
+        bottom: -70px;
     }
     background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
@@ -19,10 +19,11 @@
 .contactBox1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 30%;
     background-color: white;
     padding: 30px;
-
+    align-content: center;
 }
 .contactBox2{
     width: 60%;
@@ -34,6 +35,13 @@
     padding: 100px 0;
 }
 
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 textarea{
     resize: none;
     height: 250px;
@@ -41,10 +49,16 @@ textarea{
     margin: 20px 0;
     padding: 20px;
 }
+
+.box1Text p{
+
+    padding: 5px;
+}
+
 .contactTop{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    justify-content:space-between;
 }
 .contactBottom{
     display: flex;
@@ -60,12 +74,55 @@ textarea{
     margin-right: 10px;
 }
 .field{
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    height: 60px;
 }
 input{
     border: none;
     height: 50px;
     padding: 20px;
+    width: 100%;
     
+}
+
+
+@media (max-width: 940px) {
+    .contactTop{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contactContainer{
+        flex-direction: column;
+    }
+    .contactBox1{
+        width: 100%;
+
+    }
+
+    .contactBox2{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+
+    .contactHeader{
+
+        h1{
+            font-size: 50px;
+            bottom: -50px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    
+    .contactHeader{
+
+        h1{
+            font-size: 40px;
+            bottom: -40px;
+        }
+    }
 }
