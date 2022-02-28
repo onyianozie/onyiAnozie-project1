@@ -1039,13 +1039,21 @@ footer {
     font-size: 18px;
   }
 
+  .images img {
+    width: 350px;
+  }
+
+  .headerText img {
+    width: 170px;
+  }
+
   .headerText h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .headerText img {
     top: -80px;
-    left: -60px;
+    left: -50px;
   }
 
   .journeyImage img {
