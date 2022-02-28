@@ -934,6 +934,10 @@ h1 {
   padding: 10px;
 }
 
+.fa-phone {
+  font-size: 18px;
+}
+
 .Icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1108,7 +1112,7 @@ footer {
   }
 }
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .image1 div, .image2 div {
     height: 100%;
   }
