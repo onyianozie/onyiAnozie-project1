@@ -231,6 +231,7 @@ ul p{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 .box2{
     width: 100%;
@@ -252,7 +253,7 @@ ul p{
 .image1 div {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background-color: #a82706;
     z-index: -1;
     top: 43px;
@@ -262,7 +263,7 @@ ul p{
 .image2 div {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     background-color: #f6a823;
     z-index: -1;
     top: 43px;
@@ -438,8 +439,19 @@ footer{
     i.fa-bars{
         visibility: hidden;
     }
-    
+    .container{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .item{
+        width: 100%;    
+    }
+    .image1 div, .image2 div{
+        height: 35%;
+    }
 }
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -514,13 +526,7 @@ footer{
         text-align: center;
         
     }
-    .container{
-        flex-direction: column;
-        align-items: center;        
-    }
-    .item{
-        width: 100%;    
-    }
+    
    
 }
 
