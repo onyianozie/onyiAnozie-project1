@@ -1113,10 +1113,6 @@ footer {
 }
 /* Landscape phones and down */
 @media (max-width: 500px) {
-  .image1 div, .image2 div {
-    height: 100%;
-  }
-
   .aboutContent {
     width: 100%;
   }

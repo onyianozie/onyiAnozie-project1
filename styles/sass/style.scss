@@ -451,8 +451,6 @@ footer{
         margin: 30px 0;
         cursor: pointer;
     }
-
-
     
     .aboutContent h2, .journeyText h2{
         font-size: 35px;
@@ -486,9 +484,7 @@ footer{
 
 /* Landscape phones and down */
 @media (max-width: 500px) {
-    .image1 div, .image2 div{
-        height: 100%;
-    }
+   
     .aboutContent{
         width: 100%;
         
