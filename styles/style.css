@@ -1067,6 +1067,14 @@ footer {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .images img {
+    width: 200px;
+  }
+
+  .image1 div, .image2 div {
+    height: 100%;
+  }
+
   header nav {
     display: none;
   }
@@ -1088,14 +1096,14 @@ footer {
   }
 
   .headerText img {
-    width: 130px;
+    width: 100px;
     position: absolute;
     top: -60px;
     left: -40px;
   }
 
   .headerText h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   body, .aboutContent p {
@@ -1105,45 +1113,6 @@ footer {
 
   .aboutContent h2, .journeyText h2, .blogText1 h2, .blogText2 h2, .photo h2, .about2 h2, .intouch h2, .blogt h2 {
     font-size: 25px;
-  }
-
-  .image1 div, .image2 div {
-    height: 20vh;
-  }
-}
-/* Landscape phones and down */
-@media (max-width: 500px) {
-  .aboutContent {
-    width: 100%;
-  }
-
-  .aboutContent h2, .journeyText h2 {
-    font-size: 30px;
-  }
-
-  .headerText h1 {
-    font-size: 50px;
-  }
-
-  .headerContent {
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-
-  .images img {
-    width: 450px;
-    -webkit-box-shadow: 20px 20px white;
-            box-shadow: 20px 20px white;
-  }
-
-  body, .aboutContent p {
-    font-size: 16px;
   }
 
   .image1, .image2 {
@@ -1195,6 +1164,41 @@ footer {
 
   .item {
     width: 100%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 500px) {
+  .aboutContent {
+    width: 100%;
+  }
+
+  .aboutContent h2, .journeyText h2 {
+    font-size: 30px;
+  }
+
+  .headerText h1 {
+    font-size: 50px;
+  }
+
+  .headerContent {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .images img {
+    width: 450px;
+    -webkit-box-shadow: 20px 20px white;
+            box-shadow: 20px 20px white;
+  }
+
+  body, .aboutContent p {
+    font-size: 16px;
   }
 
   .journeyContent {
