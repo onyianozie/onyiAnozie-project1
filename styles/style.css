@@ -1106,6 +1106,11 @@ footer {
     font-size: 55px;
   }
 
+  .aboutContent {
+    width: 100%;
+    text-align: center;
+  }
+
   body, .aboutContent p {
     font-size: 16px;
     line-height: 25px;
@@ -1192,7 +1197,7 @@ footer {
   }
 
   .images img {
-    width: 450px;
+    width: 260px;
     -webkit-box-shadow: 20px 20px white;
             box-shadow: 20px 20px white;
   }
